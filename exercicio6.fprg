@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="digma"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-30 09:32:37 "/>
+        <attribute name="created" value="ZGlnbWE7TEFQVE9QLTVQU0gyVDVTOzIwMjEtMDgtMzA7IjA4OjQ5OjE2ICI7Mjc4MA=="/>
+        <attribute name="edited" value="ZGlnbWE7TEFQVE9QLTVQU0gyVDVTOzIwMjEtMDgtMzA7IjA5OjMyOjM3ICI7MTI7MjkzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Jan, Fev, Mar, Abr, total" type="Real" array="False" size=""/>
+            <input variable="Jan"/>
+            <input variable="Fev"/>
+            <input variable="Mar"/>
+            <input variable="Abr"/>
+            <assign variable="total" expression="(Jan+Fev+Mar+Abr)"/>
+            <output expression="total" newline="True"/>
+            <if expression="total&gt;=5000">
+                <then>
+                    <output expression="&quot;Parab&#233;ns vc vai receber 5% de abono!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente voc&#234; receber&#225; 3% de abono&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
